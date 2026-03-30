@@ -34,7 +34,7 @@ VALIDATE $? "installing node js dependencies"
 
 #check your repo and path
 #we are giving the absalute patch of backend service to avoid erros
-cp /home/ec2-user/Venu_Shell_Project/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
+cp /home/ec2-user/calling-other-shell-script/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 VALIDATE $? "copied backend service"
 
 systemctl daemon-reload &>>$LOGFILE
