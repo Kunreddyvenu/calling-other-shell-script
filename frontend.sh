@@ -26,7 +26,7 @@ then
 else 
    echo "you are super user"
 fi
-source ./common values.sh  #we need to mention source and ./other script file
+source ./commonvalues.sh  #we need to mention source and ./other script file
 Check_Root
 dnf install nginx -y &>>$LOGFILE
 VALIDATE $? "instlling nginx"
