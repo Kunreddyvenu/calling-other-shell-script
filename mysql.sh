@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#!/bin/bash
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
@@ -31,7 +31,7 @@ else
 fi
 
 =======
-source ./common values.sh  #we need to mention source and ./other script file
+source ./commonvalues.sh  #we need to mention source and ./other script file
 Check_Root  #this is function calling from other script that source file
 echo "please enter DB password"
 read -s mysql_root_password

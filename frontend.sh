@@ -49,7 +49,7 @@ unzip /tmp/frontend.zip &>>$LOGFILE
 VALIDATE $? "extracting frontend code"
 
 #check your repo and path
-cp /home/ec2-user/Venu_Shell_Project/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
+cp /home/ec2-user/calling-other-shell-script/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
 VALIDATE $? "Copied expense conf"
 
 systemctl restart nginx &>>$LOGFILE
